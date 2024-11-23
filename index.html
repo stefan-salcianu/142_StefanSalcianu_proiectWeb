@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="navbar">
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="antet">
+          <div class="document-infos">
+            <i class="fa-regular fa-file"></i>
+            <div class="document-info">
+              <input
+                type="text"
+                class="document-name noselect"
+                id="documentName"
+                maxlength="50"
+                placeholder="Write document name..."
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                class="document-extension noselect"
+                id="documentExtension"
+                maxlength="25"
+                placeholder="Write document extension..."
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="control-panel">
+            <div id="clearBtn">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="save-changes-btn">
+              <i class="fa-solid fa-floppy-disk"></i>
+              <span>Save Changes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="editor-side">
+        <div class="markdown-side">
+          <div class="antet">Markdown</div>
+          <textarea name="markdown" id="markdown" class="noselect"> </textarea>
+        </div>
+        <div class="preview-side">
+          <div class="antet">
+            Preview
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div id="preview"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
